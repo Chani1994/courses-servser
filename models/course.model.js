@@ -10,7 +10,7 @@ const courseSchema = new mongoose.Schema({
   syllabus: [String],
   learningMethod: { type: String, required: true },
   lecturerCode: { type: String, required: true },
-  imagePath: String,
+  imagePath: { type: String, required: true },
   category: {
     code: String,
     name: String,

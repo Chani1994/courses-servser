@@ -3,11 +3,52 @@ const Category = require('../models/category.model'); // שנה את הנתיב 
 
 // קורסים ברירת מחדל
 const defaultCourses = [
-  { category: { code: '001', name: 'הוראה', iconPath: 'assets/images/teach-1968076_1280.jpg' }, courseCode: 'DEF001', courseName: 'קורס אנגלית ', numberOfLessons: 10, startDate: new Date('2024-09-25'), syllabus: ['מבוא להוראה'], learningMethod: 'Zoom', lecturerCode: 'משה', imagePath: 'assets/images/english-british-england-language-education-concept.jpg' },
-  { category: { code: '002', name: 'יצירה ואומנות', iconPath: 'assets/images/hand-4752642_1280.jpg' }, courseCode: 'DEF002', courseName: 'תפירה למתחילים', numberOfLessons: 5, startDate: new Date('2024-09-15'), syllabus: ['יסודות התפירה'], learningMethod: 'In-Person', lecturerCode: 'משה', imagePath: 'assets/images/top-view-variety-fabrics-with-thread-scissors.jpg' },
-  { category: { code: '003', name: 'מחשבים', iconPath: 'assets/images/pexels-pixabay-38568.jpg' }, courseCode: 'DEF003', courseName: 'קורס אדריכלות', numberOfLessons: 12, startDate: new Date('2024-10-30'), syllabus: [' מבוא לאדריכלות'], learningMethod:'Zoom', lecturerCode: 'משה', imagePath: 'assets/images/high-angle-architectural-objects-desk.jpg' },
-  { category: { code: '004', name: 'רפואה', iconPath: 'assets/images/syringes-3539565_1280.jpg' }, courseCode: 'DEF004', courseName: 'מזכירות רפואית', numberOfLessons: 8, startDate: new Date('2024-09-30'), syllabus: ['יסודות הרפואה'], learningMethod:'In-Person', lecturerCode: 'משה', imagePath: 'assets/images/cold-1972619_1280.jpg' },
+  { 
+      category: { code: '001', name: 'Teaching', iconPath: 'assets/images/teach-1968076_1280.jpg' }, 
+      courseCode: 'DEF001', 
+      courseName: 'English Course', 
+      numberOfLessons: 10, 
+      startDate: new Date('2024-09-25'), 
+      syllabus: ['Introduction to Teaching'], 
+      learningMethod: 'Zoom',
+      lecturerCode: 'USR-4662', 
+      imagePath: 'assets/images/english-british-england-language-education-concept.jpg' 
+  },
+  { 
+      category: { code: '002', name: 'Creation and Art', iconPath: 'assets/images/hand-4752642_1280.jpg' }, 
+      courseCode: 'DEF002', 
+      courseName: 'Sewing for Beginners', 
+      numberOfLessons: 5, 
+      startDate: new Date('2024-09-15'), 
+      syllabus: ['Sewing Basics'], 
+      learningMethod: 'In-Person', 
+      lecturerCode: 'USR-8948', 
+      imagePath: 'assets/images/top-view-variety-fabrics-with-thread-scissors.jpg' 
+  },
+  { 
+      category: { code: '003', name: 'Computers', iconPath: 'assets/images/pexels-pixabay-38568.jpg' }, 
+      courseCode: 'DEF003', 
+      courseName: 'Architecture Course', 
+      numberOfLessons: 12, 
+      startDate: new Date('2024-10-30'), 
+      syllabus: ['Introduction to Architecture'], 
+      learningMethod: 'Zoom', 
+      lecturerCode: 'USR-7609', 
+      imagePath: 'assets/images/high-angle-architectural-objects-desk.jpg' 
+  },
+  { 
+      category: { code: '004', name: 'Medicine', iconPath: 'assets/images/syringes-3539565_1280.jpg' }, 
+      courseCode: 'DEF004', 
+      courseName: 'Medical Secretarial Studies', 
+      numberOfLessons: 8, 
+      startDate: new Date('2024-09-30'), 
+      syllabus: ['Basics of Medicine'], 
+      learningMethod: 'In-Person', 
+      lecturerCode: 'USR-445', 
+      imagePath: 'assets/images/cold-1972619_1280.jpg' 
+  },
 ];
+
 
 // פונקציה להוספת קורסים ברירת מחדל אם הם לא קיימים
 exports.initializeDefaultCourses = async () => {

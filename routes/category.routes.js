@@ -14,8 +14,5 @@ router.post('/', categoryController.createCategory);
 // עדכון קטגוריה לפי קוד
 router.put('/:code', categoryController.updateCategory);
 
-// מחיקת קטגוריה לפי קוד
-router.delete('/:code', categoryController.deleteCategory);
-
 module.exports = router;
 

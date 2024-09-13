@@ -29,10 +29,10 @@ exports.getUserByName = async (req, res) => {
 
 // הוספת משתמש חדש
 exports.createUser = async (req, res) => {
-  const { code, username, password, email } = req.body;
+  const { code, username, password, address,email } = req.body;
 
   // בדיקת שדות חובה
-  if (!code || !username || !password || !email) {
+  if (!code || !username || !password ||!address|| !email) {
     return res.status(400).json({ message: 'All fields are required' });
   }
 
@@ -51,6 +51,7 @@ exports.createUser = async (req, res) => {
       code,
       username,
       password: hashedPassword,
+      address,
       email,
     });
 

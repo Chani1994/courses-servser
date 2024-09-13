@@ -75,10 +75,11 @@ exports.checkAndAddDefaultCategories = async () => {
     const categoriesCount = await Category.countDocuments();
     if (categoriesCount === 0) {
       const defaultCategories = [
-      { code: '001', name: 'הוראה', iconPath: 'assets/images/teach-1968076_1280.jpg' },
-      { code: '002', name: 'יצירה ואומנות', iconPath: 'assets/images/hand-4752642_1280.jpg' },
-      { code: '003', name: 'מחשבים', iconPath: 'assets/images/pexels-pixabay-38568.jpg' },
-      { code: '004', name: 'רפואה', iconPath: 'assets/images/syringes-3539565_1280.jpg' },
+        { code: '001', name: 'Teaching', iconPath: 'assets/images/teach-1968076_1280.jpg' },
+        { code: '002', name: 'Creation and Art', iconPath: 'assets/images/hand-4752642_1280.jpg' },
+        { code: '003', name: 'Computers', iconPath: 'assets/images/pexels-pixabay-38568.jpg' },
+        { code: '004', name: 'Medicine', iconPath: 'assets/images/syringes-3539565_1280.jpg' },
+  
       ];
       await Category.insertMany(defaultCategories);
       console.log('Default categories added');
