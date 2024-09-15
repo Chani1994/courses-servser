@@ -4,7 +4,8 @@ const Category = require('../models/category.model'); // שנה את הנתיב 
 // קורסים ברירת מחדל
 const defaultCourses = [
   { 
-      category: { code: '001', name: 'Teaching', iconPath: 'assets/images/teach-1968076_1280.jpg' }, 
+    categoryCode:'001',
+
       courseCode: 'DEF001', 
       courseName: 'English Course', 
       numberOfLessons: 10, 
@@ -14,8 +15,8 @@ const defaultCourses = [
       lecturerCode: 'USR-4662', 
       imagePath: 'assets/images/english-british-england-language-education-concept.jpg' 
   },
-  { 
-      category: { code: '002', name: 'Creation and Art', iconPath: 'assets/images/hand-4752642_1280.jpg' }, 
+  {     categoryCode:'002',
+
       courseCode: 'DEF002', 
       courseName: 'Sewing for Beginners', 
       numberOfLessons: 5, 
@@ -25,8 +26,8 @@ const defaultCourses = [
       lecturerCode: 'USR-8948', 
       imagePath: 'assets/images/top-view-variety-fabrics-with-thread-scissors.jpg' 
   },
-  { 
-      category: { code: '003', name: 'Computers', iconPath: 'assets/images/pexels-pixabay-38568.jpg' }, 
+  {     categoryCode:'003',
+
       courseCode: 'DEF003', 
       courseName: 'Architecture Course', 
       numberOfLessons: 12, 
@@ -37,7 +38,7 @@ const defaultCourses = [
       imagePath: 'assets/images/high-angle-architectural-objects-desk.jpg' 
   },
   { 
-      category: { code: '004', name: 'Medicine', iconPath: 'assets/images/syringes-3539565_1280.jpg' }, 
+    categoryCode:'004',
       courseCode: 'DEF004', 
       courseName: 'Medical Secretarial Studies', 
       numberOfLessons: 8, 

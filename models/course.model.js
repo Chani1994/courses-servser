@@ -1,7 +1,6 @@
 const mongoose = require('mongoose');
 const bcrypt = require('bcrypt');
 
-
 const courseSchema = new mongoose.Schema({
   courseCode: { type: String, required: true, unique: true },
   courseName: { type: String, required: true },
@@ -11,11 +10,8 @@ const courseSchema = new mongoose.Schema({
   learningMethod: { type: String, required: true },
   lecturerCode: { type: String, required: true },
   imagePath: { type: String, required: true },
-  category: {
-    code: String,
-    name: String,
-    iconPath: String
-  }
+  categoryCode: {  type: String, required: true}
 });
+
 
 module.exports = mongoose.model('Course', courseSchema);
