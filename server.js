@@ -33,7 +33,7 @@ app.use('/lecturers', require('./routes/lecturers.routes'));
 app.use('/categories',  require('./routes/category.routes'));
 
 // הפעלת השרת
-const port = process.env.PORT || 3000; // מוודא שהפורט מוגדר
+const port = process.env.PORT; // מוודא שהפורט מוגדר
 app.listen(port, () => {
   console.log(`Server running on http://localhost:${port}`);
 });
