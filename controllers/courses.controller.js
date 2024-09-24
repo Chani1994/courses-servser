@@ -12,8 +12,29 @@ const defaultCourses = [
       startDate: new Date('2024-09-25'), 
       syllabus: ['Introduction to Teaching'], 
       learningMethod: 'Zoom',
-      lecturerCode: 'USR-4662', 
+      lecturerCode: 'USR-3122', 
       imagePath: 'assets/images/english-british-england-language-education-concept.jpg' 
+  }, { 
+    categoryCode: '001',
+    courseCode: 'DEF005', 
+    courseName: 'Advanced English Grammar', 
+    numberOfLessons: 8, 
+    startDate: new Date('2024-10-05'), 
+    syllabus: ['Grammar Basics', 'Advanced Tenses', 'Punctuation Rules'], 
+    learningMethod: 'Zoom', 
+    lecturerCode: 'USR-3122', 
+    imagePath: 'assets/images/study-6684423_1280.jpg' 
+  },
+  { 
+    categoryCode: '002',
+    courseCode: 'DEF006', 
+    courseName: 'Fashion Design Basics', 
+    numberOfLessons: 6, 
+    startDate: new Date('2024-09-20'), 
+    syllabus: ['Design Principles', 'Fabric Selection', 'Pattern Making'], 
+    learningMethod: 'In-Person', 
+    lecturerCode: 'USR-6462', 
+    imagePath: 'assets/images/top-view-sewing-essentials-with-scissors-thread.jpg' 
   },
   {     categoryCode:'002',
 
@@ -23,7 +44,7 @@ const defaultCourses = [
       startDate: new Date('2024-09-15'), 
       syllabus: ['Sewing Basics'], 
       learningMethod: 'In-Person', 
-      lecturerCode: 'USR-8948', 
+      lecturerCode: 'USR-6462', 
       imagePath: 'assets/images/top-view-variety-fabrics-with-thread-scissors.jpg' 
   },
   {     categoryCode:'003',
@@ -34,7 +55,7 @@ const defaultCourses = [
       startDate: new Date('2024-10-30'), 
       syllabus: ['Introduction to Architecture'], 
       learningMethod: 'Zoom', 
-      lecturerCode: 'USR-7609', 
+      lecturerCode: 'USR-5210', 
       imagePath: 'assets/images/high-angle-architectural-objects-desk.jpg' 
   },
   { 
@@ -45,7 +66,7 @@ const defaultCourses = [
       startDate: new Date('2024-09-30'), 
       syllabus: ['Basics of Medicine'], 
       learningMethod: 'In-Person', 
-      lecturerCode: 'USR-445', 
+      lecturerCode: 'USR-4802', 
       imagePath: 'assets/images/cold-1972619_1280.jpg' 
   },
 ];
